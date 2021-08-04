@@ -1,0 +1,41 @@
+$inputBorder: #e2e2e2
+
+input 
+  border-radius: 4px
+  padding: 8px 18px
+  border: 1px solid $inputBorder
+  max-width: 2rem
+  text-align: center
+
+.input-view
+  display: flex
+  padding: 20px
+  background: #f1f1f1
+  border-radius: 5px
+  margin: 30px 0
+
+input, label 
+    display:block
+
+.input-label
+  text-align: left
+
+.input-fields
+  display: flex
+  padding: 0 20px
+
+.input-field
+  display: flex
+  flex-direction: column
+  margin: 5px
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+
+/* Firefox */
+input[type=number] 
+  -moz-appearance: textfield

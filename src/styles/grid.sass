@@ -1,0 +1,44 @@
+$filledDefault: #f1f1f1
+$hover: #f8f8f8
+$down: #e2e2e2
+$clear: #ffffff
+$startingPoint: #7ed321
+$endPoint: #639530
+$shortestPath: #f5a623
+$gridBorder: #ddd
+    
+.grid
+    display: grid
+    grid-template-columns: repeat(var(--colum-number), auto)
+    margin: auto
+ 
+.grid > div
+  padding: 10px
+  border: 1px solid $gridBorder
+  aspect-ratio: 1
+
+.grid-default
+  background-color: $filledDefault
+
+
+.grid-down
+  background-color: $down 
+  // background-color: $filledDefault
+
+.grid-clear
+  background-color: $clear
+  
+
+.grid-clear, .grid-default, .grid-down, .grid-shortest-path
+  &:hover 
+    background-color: $hover
+
+.grid-starting-point
+  background: $startingPoint
+
+.grid-end-point
+  background: $endPoint
+
+.grid-shortest-path
+  background: $shortestPath
+
